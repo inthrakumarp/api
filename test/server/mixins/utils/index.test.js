@@ -15,13 +15,13 @@ describe('Utility Functions', () => {
       })
     })
     it('should update `updatedAt` on a request', (done) => {
-        const context = {
-          data: {},
-        }
-        utils.updateTimestamps(context, () => {
-          expect(context.data.updatedAt).to.be.an.instanceof(Date)
-          done()
-        })
+      const context = {
+        data: {},
+      }
+      utils.updateTimestamps(context, () => {
+        expect(context.data.updatedAt).to.be.an.instanceof(Date)
+        done()
       })
     })
   })
+})
